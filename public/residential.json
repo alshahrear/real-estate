@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxury Family Apartment",
+      "segment_name": "Residential",
+      "description": "A modern and spacious apartment with all the latest amenities, perfect for families.",
+      "price": "$250,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Gulshan, Dhaka",
+      "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
+      "image": "https://i.ibb.co.com/s9VB6ybT/house3.webp",
+      "view_property": "View Property"
+    },
+    {
+      "id": 2,
+      "estate_title": "Modern Studio Apartment",
+      "segment_name": "Residential",
+      "description": "A compact and stylish studio apartment in the heart of the city, ideal for young professionals.",
+      "price": "$1,200/month",
+      "status": "rent",
+      "area": "600 sq ft",
+      "location": "Banani, Dhaka",
+      "facilities": ["Living Room", "Kitchen"],
+      "image": "https://i.ibb.co.com/8DMTsMJV/house2.jpg",
+      "view_property": "View Property"
+    },
+    {
+      "id": 3,
+      "estate_title": "Luxury Villa with Private Pool",
+      "segment_name": "Residential",
+      "description": "An exclusive villa with a private swimming pool, garden, and premium facilities.",
+      "price": "$750,000",
+      "status": "sale",
+      "area": "3500 sq ft",
+      "location": "Baridhara, Dhaka",
+      "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Garden"],
+      "image": "https://i.ibb.co.com/PvVhNxjS/house1.webp",
+      "view_property": "View Property"
+    },
+    {
+      "id": 4,
+      "estate_title": "Cozy 2 Bedroom Apartment",
+      "segment_name": "Residential",
+      "description": "A beautifully designed 2-bedroom apartment in a prime location.",
+      "price": "$1,500/month",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "Uttara, Dhaka",
+      "facilities": ["Living Room", "Kitchen"],
+      "image": "https://i.ibb.co.com/DfHxNK9j/house4.jpg",
+      "view_property": "View Property"
+    },
+    {
+      "id": 5,
+      "estate_title": "Penthouse with City View",
+      "segment_name": "Residential",
+      "description": "A stunning penthouse with a panoramic city view and rooftop access.",
+      "price": "$1,000,000",
+      "status": "sale",
+      "area": "4000 sq ft",
+      "location": "Dhanmondi, Dhaka",
+      "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Rooftop"],
+      "image": "https://i.ibb.co.com/Jw3QW6ND/house5.webp",
+      "view_property": "View Property"
+    },
+    {
+      "id": 6,
+      "estate_title": "Affordable Family House",
+      "segment_name": "Residential",
+      "description": "A budget-friendly family house with spacious rooms and a backyard.",
+      "price": "$180,000",
+      "status": "sale",
+      "area": "2200 sq ft",
+      "location": "Mirpur, Dhaka",
+      "facilities": ["Living Room", "Kitchen", "Garden"],
+      "image": "https://i.ibb.co.com/VWHqth4m/house.jpg",
+      "view_property": "View Property"
+    }
+  ]
+  

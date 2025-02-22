@@ -18,7 +18,7 @@ const Navbar = () => {
                     <NavLink className="mr-12 py-1 px-2 rounded-lg hover:bg-gray-200">User Profile</NavLink>
                 </div>
                 <div>
-                    <Link>
+                    <Link to="/login">
                     <button className="btn items-center hover:bg-amber-500 bg-[#ed6325] py-3 px-4 rounded-lg text-white">Login <span><BiSolidLogInCircle className="text-lg"></BiSolidLogInCircle></span></button>
                     </Link>
                 </div>
