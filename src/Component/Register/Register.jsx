@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,6 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 const Register = () => {
     const { createUser } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
+    const location = useLocation();
+    const Navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -41,14 +43,15 @@ const Register = () => {
                 console.log(result.user);
                 toast.success("Registration Successful!", {
                     position: "top-right",
-                    autoClose: 3000,
+                    autoClose: 2000,
                 });
+                Navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
                 console.error(error);
                 toast.error("Registration Failed! Please try again.", {
                     position: "top-right",
-                    autoClose: 3000,
+                    autoClose: 2000,
                 });
             });
     }

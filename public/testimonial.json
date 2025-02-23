@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "designation": "CEO",
+    "img": "https://i.ibb.co.com/JwqCsXQY/download-8.jpg",
+    "message": "As a CEO, I ensure our company stays ahead in the real estate market by focusing on innovation, customer satisfaction, and strategic growth."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "designation": "Manager",
+    "img": "https://i.ibb.co.com/XxdV3B0f/download-7.jpg",
+    "message": "Managing a dynamic real estate team requires leadership, coordination, and a deep understanding of client needs for successful transactions."
+  },
+  {
+    "id": 3,
+    "name": "David Williams",
+    "designation": "Sales Executive",
+    "img": "https://i.ibb.co.com/B56hkQTy/download-6.jpg",
+    "message": "I specialize in helping clients find their dream properties while ensuring they get the best deals in the competitive real estate market."
+  },
+  {
+    "id": 4,
+    "name": "Linda Brown",
+    "designation": "Property Consultant",
+    "img": "https://i.ibb.co.com/HmsMjmv/download-5.jpg",
+    "message": "Guiding clients through the buying and selling process, I offer expert advice on property investments and market trends."
+  },
+  {
+    "id": 5,
+    "name": "Michael White",
+    "designation": "Architect",
+    "img": "https://i.ibb.co.com/n8DKZ408/download-4.jpg",
+    "message": "Designing modern and sustainable real estate projects is my passion, ensuring every structure meets aesthetic and functional excellence."
+  },
+  {
+    "id": 6,
+    "name": "James Taylor",
+    "designation": "Civil Engineer",
+    "img": "https://i.ibb.co.com/fVZKfx9S/download-3.jpg",
+    "message": "Structural integrity and innovative designs are at the core of my work, ensuring safe and high-quality real estate development."
+  },
+  {
+    "id": 7,
+    "name": "Jessica Lee",
+    "designation": "Marketing Executive",
+    "img": "https://i.ibb.co.com/R42HPpGV/download-2.jpg",
+    "message": "I develop marketing strategies that attract potential buyers and investors, making real estate projects more visible and appealing."
+  },
+  {
+    "id": 8,
+    "name": "Paul Harris",
+    "designation": "Accountant",
+    "img": "https://i.ibb.co.com/PzTQWV47/download-1.jpg",
+    "message": "Financial accuracy and transparent transactions are key to my role, ensuring smooth property deals with proper financial management."
+  },
+  {
+    "id": 9,
+    "name": "Chris Wilson",
+    "designation": "Legal Advisor",
+    "img": "https://i.ibb.co.com/Psh99F5P/download.jpg",
+    "message": "Navigating real estate laws and ensuring compliance is my expertise, providing clients with legal security in property transactions."
+  }
+]

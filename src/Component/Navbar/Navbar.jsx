@@ -23,7 +23,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-12 text-lg font-semibold">
                         <NavLink className="hover:bg-gray-200 px-2 py-1 rounded-lg">Home</NavLink>
                         <NavLink className="hover:bg-gray-200 px-2 py-1 rounded-lg">Blog</NavLink>
-                        <NavLink className="hover:bg-gray-200 px-2 py-1 rounded-lg">Update Profile</NavLink>
+                        <NavLink to="/updateProfile" className="hover:bg-gray-200 px-2 py-1 rounded-lg">Update Profile</NavLink>
 
                         {/* User Profile with Hover Effect */}
                         
