@@ -6,7 +6,7 @@ import { TbClockHour2 } from "react-icons/tb";
 
 const Contact = () => {
     return (
-        <div className="flex  w-[1200px] mx-auto mt-5 mb-10">
+        <div className="flex  w-[1200px] mx-auto mt-5 mb-16">
             <div className="space-y-10 flex-1">
                 <h2 className="text-4xl font-semibold">Contact Us</h2>
                 <p className="text-gray-700 -mt-5">Feel free to contact us for any inquiries, suggestions, or support. Our team is always ready to assist you and ensure you receive the best service tailored to your needs. We value your communication and look forward to hearing from you soon.</p>
@@ -43,14 +43,14 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <p className="text-lg font-medium mt-10">Contact us have a cool projects? <span className="text-orange-600">Get in Touch!</span></p>
+                <p className="text-lg font-medium mt-12">Contact us have a cool projects? <span className="text-orange-600">Get in Touch!</span></p>
             </div>
             {/* form */}
             <div className="flex-1 ml-36">
-                <div className="shadow-lg pl-10 py-8">
+                <div className="shadow-lg px-8 py-8">
                     <form className="space-y-3">
                         <div>
-                            <h3 className="text-3xl font-semibold">Get in Touch</h3>
+                            <h3 className="text-3xl  font-semibold">Get in Touch</h3>
                         </div>
                         <div className="form-control">
                             <input type="text" placeholder="Your Name" className="input input-bordered font-medium bg-[#F4F4F4] w-[420px]" required />

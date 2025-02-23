@@ -7,6 +7,7 @@ import Register from "../Register/Register";
 import Estates from "../Estates/Estates";
 import Estate from "../Estate/Estate";
 import EstateDetails from "../EstateDetails/EstateDetails";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/estate/:id",
-        element: <EstateDetails></EstateDetails>
+        element: <PrivetRoute><EstateDetails></EstateDetails></PrivetRoute>
       }
     ]
   }

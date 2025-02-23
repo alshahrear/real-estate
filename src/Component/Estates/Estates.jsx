@@ -20,8 +20,8 @@ const Estates = () => {
                     your dream home is just a click away! 🏡
                 </p>
             </div>
-            <hr />
-            <div className="mt-2 grid grid-cols-2 gap-6">
+            <div className="border-1 border-gray-300"></div>
+            <div className="mt-5 grid grid-cols-2 gap-6">
                 {estates.map(estate => <Estate key={estate.id} estate={estate} />)}
             </div>
         </div>
