@@ -5,6 +5,7 @@ import GoogleLogin from "../Google/GoogleLogin";
 import { AuthContext } from "../Provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
@@ -23,7 +24,7 @@ const Login = () => {
                 console.log(result.user);
                 toast.success("Login Successful!", {
                     position: "top-right",
-                    autoClose: 2000, 
+                    autoClose: 2000,
                 });
                 Navigate(location?.state ? location.state : "/");
             })
@@ -38,6 +39,9 @@ const Login = () => {
 
     return (
         <div className="pt-10 pb-10 ">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <div className="flex justify-center items-center bg-white ">
                 <form onSubmit={handleLogin}>
                     <div className="bg-white p-6 border-2 border-gray-200 rounded-lg shadow-md">

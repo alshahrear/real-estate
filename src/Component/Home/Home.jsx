@@ -4,6 +4,7 @@ import Contact from "../ContactUs/Contact";
 import Estates from "../Estates/Estates";
 import Testimonials from "../Testimonials/Testimonials";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -13,6 +14,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Real Estate | Home</title>
+            </Helmet>
            <Banner></Banner>
            <Estates></Estates>
            {user && <Testimonials></Testimonials>}

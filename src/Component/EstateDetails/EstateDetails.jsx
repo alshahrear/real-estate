@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const EstateDetails = () => {
     const { id } = useParams();
@@ -22,6 +23,9 @@ const EstateDetails = () => {
 
     return (
         <div className="mt-10 mb-10 w-[1200px] mx-auto p-6 shadow-lg">
+            <Helmet>
+                <title>Estate Details: {id}</title>
+            </Helmet>
             <div className="flex">
                 <div className="">
                     <img className="w-[500px] h-[280px] rounded-lg" src={image} alt={estate_title} />

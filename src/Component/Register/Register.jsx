@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
     const { createUser } = useContext(AuthContext);
@@ -58,6 +59,9 @@ const Register = () => {
 
     return (
         <div className="flex justify-center items-center bg-[#ededf3] pt-10 pb-10">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <form onSubmit={handleRegister}>
                 <div className="bg-white px-8 py-5 border-2 border-gray-200 rounded-lg shadow-md">
                     <h2 className="text-2xl font-bold mb-4">Create an account</h2>
