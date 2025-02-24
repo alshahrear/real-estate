@@ -21,20 +21,29 @@ const Navbar = () => {
 
                     {/* Navigation Menu */}
                     <div className="flex items-center space-x-12 text-lg font-semibold">
-                        <NavLink className="hover:bg-gray-200 px-2 py-1 rounded-lg">Home</NavLink>
-                        <NavLink className="hover:bg-gray-200 px-2 py-1 rounded-lg">Blog</NavLink>
-                        <NavLink to="/updateProfile" className="hover:bg-gray-200 px-2 py-1 rounded-lg">Update Profile</NavLink>
-
-                        {/* User Profile with Hover Effect */}
-                        
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                `hover:bg-gray-200 px-2 py-1 rounded-lg ${isActive ? "text-orange-500" : ""}`
+                            }
+                        >
+                            Home
+                        </NavLink>
+                        <NavLink
+                            to="/updateProfile"
+                            className={({ isActive }) =>
+                                `hover:bg-gray-200 px-2 py-1 rounded-lg ${isActive ? "text-orange-500" : ""}`
+                            }
+                        >
+                            Update Profile
+                        </NavLink>
                     </div>
 
                     {/* Login/Logout Button */}
                     <div className="flex items-center">
-                        <div className="text-lg font-semibold mr-3">
-                        {
-                            user && user.photoURL ? (
-                                <div 
+                        <div className="text-lg font-semibold mr-10">
+                            {user && user.photoURL ? (
+                                <div
                                     className="w-32 flex items-center justify-center font-semibold cursor-pointer min-w-[100px] text-center whitespace-nowrap"
                                     onMouseEnter={() => setShowName(true)}
                                     onMouseLeave={() => setShowName(false)}
@@ -46,24 +55,23 @@ const Navbar = () => {
                                     )}
                                 </div>
                             ) : (
-                                <NavLink className="hover:bg-gray-200 px-2 py-1 rounded-lg">User Profile</NavLink>
-                            )
-                        }
+                                <NavLink className="px-2 py-1 rounded-lg">User Profile</NavLink>
+                            )}
                         </div>
                         <div>
-                        {
-                            user ?
+                            {user ? (
                                 <Link onClick={handleSignOut}>
                                     <button className="flex items-center gap-1 bg-[#ed6325] text-white px-4 py-2 rounded-lg hover:bg-amber-500">
                                         Log Out <BiSolidLogInCircle className="text-lg" />
                                     </button>
-                                </Link> :
+                                </Link>
+                            ) : (
                                 <Link to="/login">
                                     <button className="flex items-center gap-1 bg-[#ed6325] text-white px-4 py-2 rounded-lg hover:bg-amber-500">
                                         Login <BiSolidLogInCircle className="text-lg" />
                                     </button>
                                 </Link>
-                        }
+                            )}
                         </div>
                     </div>
                 </div>

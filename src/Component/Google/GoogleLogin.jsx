@@ -2,19 +2,31 @@
 import { FcGoogle } from "react-icons/fc";
 import { SiGithub } from "react-icons/si";
 import { auth } from "../firebase/firebase.config";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useLocation, useNavigate } from "react-router-dom";
-
 
 
 const GoogleLogin = () => {
 
-    const provider = new GoogleAuthProvider();
+    const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
+
     const location = useLocation();
     const Navigate = useNavigate();
 
     const handleGoogleLogin = () =>{
-        signInWithPopup(auth, provider)
+        signInWithPopup(auth, googleProvider)
+    .then(result =>{
+        console.log(result.user);
+        Navigate(location?.state ? location.state : "/");
+    })
+    .catch(error =>{
+        console.error(error);
+    })
+    }
+
+    const handleGithubLogin = () =>{
+        signInWithPopup(auth, githubProvider)
     .then(result =>{
         console.log(result.user);
         Navigate(location?.state ? location.state : "/");
@@ -33,7 +45,7 @@ const GoogleLogin = () => {
                     <div className="flex-1 h-[1px] bg-gray-400"></div>
                 </div>
                 <button onClick={handleGoogleLogin} className="btn  px-[110px] rounded-2xl bg-white text-black"><span><FcGoogle></FcGoogle></span>Continue With Google</button> <br />
-                <button className="btn px-[110px] rounded-2xl bg-white text-black mt-2"><span><SiGithub></SiGithub></span> Continue With Github</button>
+                <button  onClick={handleGithubLogin} className="btn px-[110px] rounded-2xl bg-white text-black mt-2"><span><SiGithub></SiGithub></span> Continue With Github</button>
             </div>
             
         </div>
