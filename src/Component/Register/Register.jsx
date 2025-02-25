@@ -10,7 +10,7 @@ const Register = () => {
     const { createUser } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const location = useLocation();
-    const Navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -46,7 +46,9 @@ const Register = () => {
                     position: "top-right",
                     autoClose: 2000,
                 });
-                Navigate(location?.state ? location.state : "/");
+                const redirectPath = location.state?.from?.pathname || "/";
+                console.log("Redirecting to:", redirectPath);
+                navigate(redirectPath);
             })
             .catch(error => {
                 console.error(error);

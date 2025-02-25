@@ -11,7 +11,7 @@ const Login = () => {
     const { signIn } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const location = useLocation();
-    const Navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleLogin = e => {
         e.preventDefault();
@@ -26,7 +26,9 @@ const Login = () => {
                     position: "top-right",
                     autoClose: 2000,
                 });
-                Navigate(location?.state ? location.state : "/");
+                const redirectPath = location.state?.from?.pathname || "/";
+                console.log("Redirecting to:", redirectPath);
+                navigate(redirectPath);
             })
             .catch(error => {
                 console.error(error);
@@ -34,6 +36,7 @@ const Login = () => {
                     position: "top-right",
                     autoClose: 2000,
                 });
+
             });
     }
 
