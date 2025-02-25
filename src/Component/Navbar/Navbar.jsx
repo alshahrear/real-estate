@@ -67,7 +67,7 @@ const Navbar = () => {
                                 </Link>
                             ) : (
                                 <Link to="/login">
-                                    <button className="flex items-center gap-1 bg-[#ed6325] text-white px-4 py-2 rounded-lg hover:bg-amber-500">
+                                    <button className="flex items-center gap-1 bg-[#ed6325] text-white px-4 py-2 rounded-lg hover:bg-amber-500 animate__animated animate__tada">
                                         Login <BiSolidLogInCircle className="text-lg" />
                                     </button>
                                 </Link>
