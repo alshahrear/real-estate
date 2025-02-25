@@ -5,6 +5,8 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet-async";
+import { updateProfile } from "firebase/auth";
+
 
 const Register = () => {
     const { createUser } = useContext(AuthContext);
@@ -46,6 +48,14 @@ const Register = () => {
                     position: "top-right",
                     autoClose: 2000,
                 });
+                // update profile
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: "https://example.com/jane-q-user/profile.jpg"
+                })
+                .then( () => console.log('Profile Updated'))
+                .catch()
+
                 const redirectPath = location.state?.from?.pathname || "/";
                 console.log("Redirecting to:", redirectPath);
                 navigate(redirectPath);
@@ -58,6 +68,8 @@ const Register = () => {
                 });
             });
     }
+
+
 
     return (
         <div className="flex justify-center items-center bg-[#ededf3] pt-10 pb-10">
